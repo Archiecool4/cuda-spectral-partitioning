@@ -47,8 +47,8 @@ if __name__ == '__main__':
     S1[idxs[x:]] = 1
     R1 = 0.25 * np.dot(S1, L.dot(S1))
     S2 = np.zeros(n)
-    S2[idxs[:x]] = -1
-    S2[idxs[x:]] = 1
+    S2[idxs[x:]] = -1
+    S2[idxs[:x]] = 1
     R2 = 0.25 * np.dot(S2, L.dot(S2))
 
     end = time.time()
